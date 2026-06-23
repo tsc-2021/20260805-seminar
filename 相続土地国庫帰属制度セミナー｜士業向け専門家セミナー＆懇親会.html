@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>相続土地国庫帰属制度セミナー｜士業向け専門家セミナー＆懇親会</title>
+  <meta name="description" content="税理士・司法書士・行政書士・弁護士など、相続不動産実務家の士業向けセミナー。2026年8月5日（水）東京駅直結・八重洲倶楽部にて開催。定員20名・先着順。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #F5F7FA;
+      color: #1A1A1A;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .lp {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 0 40px rgba(0,0,0,0.08);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #0D3B72 0%, #1A5FA8 60%, #2176C8 100%);
+      color: #fff;
+      padding: 56px 40px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 340px; height: 340px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -50px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 22px;
+    }
+    .hero-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-title span { color: #7DC8FF; }
+    .hero-subtitle {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 20px;
+    }
+    .hero-badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-size: 13px;
+      color: #fff;
+    }
+    .hero-badge svg { width: 16px; height: 16px; color: #7DC8FF; flex-shrink: 0; }
+    .hero-deadline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,200,80,0.18);
+      border: 1px solid rgba(255,200,80,0.48);
+      border-radius: 8px;
+      padding: 9px 18px;
+      font-size: 13px;
+      color: #FFE48A;
+      position: relative;
+      z-index: 1;
+      font-weight: 500;
+    }
+    .hero-deadline svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* ── CTA BAR ── */
+    .cta-bar {
+      background: #1A5FA8;
+      padding: 22px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .cta-bar-text { color: #fff; font-size: 13px; opacity: 0.92; }
+    .cta-bar-text strong { font-size: 16px; display: block; margin-bottom: 3px; }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #fff;
+      color: #1A5FA8;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 13px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .cta-btn:hover { opacity: 0.88; }
+    .cta-btn svg { width: 16px; height: 16px; }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 44px 40px;
+      border-bottom: 1px solid #EEF0F4;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #1A5FA8;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .section-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.55;
+      margin-bottom: 22px;
+      color: #0D1A2B;
+    }
+
+    /* ── ABOUT ── */
+    .about-lead {
+      font-size: 14px;
+      line-height: 1.95;
+      color: #444;
+      margin-bottom: 22px;
+    }
+    .about-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .about-point {
+      background: #EBF4FF;
+      border-left: 3px solid #1A5FA8;
+      border-radius: 0 6px 6px 0;
+      padding: 11px 16px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #0D3B72;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline { display: flex; flex-direction: column; }
+    .timeline-item { display: flex; gap: 18px; }
+    .timeline-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 64px;
+      flex-shrink: 0;
+    }
+    .timeline-time {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1A5FA8;
+      white-space: nowrap;
+      padding-top: 3px;
+    }
+    .timeline-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      background: #1A5FA8;
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .timeline-line {
+      width: 2px;
+      flex: 1;
+      background: #C8DCF5;
+      margin-top: 7px;
+      min-height: 28px;
+    }
+    .timeline-content {
+      padding-bottom: 28px;
+      padding-top: 3px;
+      flex: 1;
+    }
+    .timeline-item:last-child .timeline-line { display: none; }
+    .timeline-item:last-child .timeline-content { padding-bottom: 0; }
+    .timeline-event {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0D1A2B;
+      margin-bottom: 3px;
+    }
+    .timeline-desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ── SPEAKER ── */
+    .speaker-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+    }
+    .speaker-avatar {
+      width: 68px; height: 68px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1A5FA8, #2176C8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .speaker-avatar svg { width: 32px; height: 32px; color: #fff; }
+    .speaker-name { font-size: 18px; font-weight: 700; margin-bottom: 4px; color: #0D1A2B; }
+    .speaker-role { font-size: 12px; color: #1A5FA8; font-weight: 700; margin-bottom: 10px; }
+    .speaker-bio { font-size: 13px; color: #555; line-height: 1.75; }
+    .speaker-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .speaker-tag {
+      font-size: 11px;
+      background: #EBF4FF;
+      color: #0D3B72;
+      border-radius: 4px;
+      padding: 4px 12px;
+    }
+
+    /* ── FEE ── */
+    .capacity-bar {
+      background: #FFF8E6;
+      border: 1px solid #F5C842;
+      border-radius: 8px;
+      padding: 13px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-size: 13px;
+      color: #7A5800;
+      font-weight: 500;
+    }
+    .capacity-bar svg { width: 20px; height: 20px; color: #C98D00; flex-shrink: 0; }
+    .fee-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .fee-card {
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .fee-card.featured {
+      border: 2px solid #1A5FA8;
+      background: #F0F7FF;
+    }
+    .fee-label { font-size: 12px; color: #666; margin-bottom: 8px; }
+    .fee-amount { font-size: 28px; font-weight: 700; color: #0D3B72; }
+    .fee-unit { font-size: 13px; color: #666; }
+    .fee-note { font-size: 12px; color: #1A5FA8; margin-top: 5px; }
+    .fee-info {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 13px;
+      color: #555;
+      line-height: 2;
+    }
+
+    /* ── VENUE ── */
+    .venue-card {
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .venue-header {
+      background: #0D3B72;
+      color: #fff;
+      padding: 16px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .venue-header svg { width: 18px; height: 18px; }
+    .venue-body { padding: 20px; }
+    .venue-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 13px;
+    }
+    .venue-row:last-child { margin-bottom: 0; }
+    .venue-row svg { width: 18px; height: 18px; color: #1A5FA8; flex-shrink: 0; margin-top: 1px; }
+    .venue-row-label { font-weight: 700; color: #0D1A2B; margin-bottom: 3px; }
+    .venue-row-text { color: #555; line-height: 1.7; }
+    .access-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .access-pill {
+      font-size: 11px;
+      background: #EBF4FF;
+      color: #0D3B72;
+      border-radius: 20px;
+      padding: 4px 14px;
+    }
+
+    /* ── ORGANIZERS ── */
+    .org-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .org-card {
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .org-badge {
+      display: inline-block;
+      font-size: 11px;
+      background: #EBF4FF;
+      color: #1A5FA8;
+      border-radius: 4px;
+      padding: 2px 10px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .org-name { font-size: 14px; font-weight: 700; color: #0D1A2B; margin-bottom: 3px; line-height: 1.4; }
+    .org-person { font-size: 12px; color: #666; }
+
+    /* ── FOOTER CTA ── */
+    .footer-cta {
+      background: linear-gradient(160deg, #0D3B72, #1A5FA8);
+      padding: 52px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .footer-cta-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .footer-cta-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 28px;
+      line-height: 1.8;
+    }
+    .cta-btn-lg {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: #fff;
+      color: #1A5FA8;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 42px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      margin-bottom: 18px;
+    }
+    .cta-btn-lg:hover { opacity: 0.88; }
+    .cta-btn-lg svg { width: 18px; height: 18px; }
+    .footer-note { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 560px) {
+      .hero { padding: 40px 24px 36px; }
+      .hero-title { font-size: 22px; }
+      .section { padding: 36px 24px; }
+      .cta-bar { padding: 18px 24px; flex-direction: column; align-items: flex-start; }
+      .about-points { grid-template-columns: 1fr; }
+      .fee-grid { grid-template-columns: 1fr; }
+      .org-grid { grid-template-columns: 1fr; }
+      .speaker-card { flex-direction: column; }
+      .footer-cta { padding: 40px 24px; }
+      .hero-meta { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="lp">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">相続不動産実務家向け 専門家セミナー &amp; 懇親会</div>
+    <h1 class="hero-title">
+      <span>相続土地国庫帰属制度</span>を<br>
+      実務から正しく理解する
+    </h1>
+    <p class="hero-subtitle">
+      税理士・司法書士・行政書士・弁護士など、相続不動産実務家の士業の皆様へ<br>
+      相談件数100件超の現場専門家が、実例を交えて解説します。
+    </p>
+    <div class="hero-meta">
+      <div class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
+        2026年8月5日（水）18:00〜
+      </div>
+      <div class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+        八重洲倶楽部（東京駅直結）
+      </div>
+      <div class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+        定員20名
+      </div>
+    </div>
+    <div class="hero-deadline">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+      申込締切：2026年7月22日（水）
+    </div>
+  </div>
+
+  <!-- CTA BAR -->
+  <div class="cta-bar">
+    <div class="cta-bar-text">
+      <strong>参加申込はこちら</strong>
+      参加費 2,000円 / 懇親会費 5,500円
+    </div>
+    <a href="https://x.gd/H1Dvw" class="cta-btn" target="_blank" rel="noopener">
+      今すぐ申し込む
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+    </a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <div class="section-label">このセミナーについて</div>
+    <h2 class="section-title">士業が今こそ知るべき、<br>相続土地国庫帰属制度の実務</h2>
+    <p class="about-lead">
+      2023年4月にスタートした相続土地国庫帰属制度。「負動産」問題が社会課題となる中、クライアントからの相談は急増しています。しかし、却下・不承認要件の見極め、測量や図面作成との連携など、実務上の落とし穴は少なくありません。本セミナーでは、申請実績豊富な専門家が現場の視点から徹底解説します。
+    </p>
+    <div class="about-points">
+      <div class="about-point">承認・却下要件の実務的な見極め方</div>
+      <div class="about-point">土地家屋調査士との連携が必要な場面</div>
+      <div class="about-point">申請書類作成の実際と注意点</div>
+      <div class="about-point">士業として活用できる事例・ノウハウ</div>
+    </div>
+  </div>
+
+  <!-- TIMETABLE -->
+  <div class="section">
+    <div class="section-label">タイムスケジュール</div>
+    <h2 class="section-title">当日の流れ</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-time">18:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-event">開場・受付</div>
+          <div class="timeline-desc">開始までしばらくお待ちください</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-time">18:15</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-event">第1部：講演「相続土地国庫帰属制度」</div>
+          <div class="timeline-desc">講師：土地家屋調査士・行政書士　池田 卓司 先生</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-time">19:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-event">質疑応答・事例紹介</div>
+          <div class="timeline-desc">鍋島・山本より補足事例を交えながらQ&amp;Aセッション</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <div class="timeline-time">19:30〜</div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-event">第2部：懇親会</div>
+          <div class="timeline-desc">講師も参加。少人数でじっくり話せる貴重な機会です</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPEAKER -->
+  <div class="section">
+    <div class="section-label">講師紹介</div>
+    <h2 class="section-title">今回の登壇者</h2>
+    <div class="speaker-card">
+      <div class="speaker-avatar">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+      </div>
+      <div>
+        <div class="speaker-name">池田 卓司 先生</div>
+        <div class="speaker-role">土地家屋調査士・行政書士　池田事務所 代表</div>
+        <div class="speaker-bio">
+          相続土地国庫帰属制度の相談件数100件超。法律雑誌「家庭の法と裁判」への執筆、週刊現代・日本経済新聞への取材協力実績あり。新日本法規出版主催セミナーの講師も務める。東京都中央区を拠点に全国対応。
+        </div>
+        <div class="speaker-tags">
+          <span class="speaker-tag">相談100件超</span>
+          <span class="speaker-tag">週刊現代 取材協力</span>
+          <span class="speaker-tag">日経新聞 掲載</span>
+          <span class="speaker-tag">全国対応</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEE -->
+  <div class="section">
+    <div class="section-label">参加費・定員</div>
+    <h2 class="section-title">料金・定員のご案内</h2>
+    <div class="capacity-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+      定員20名・先着順のため、お早めにお申し込みください。申込締切：7月22日（水）
+    </div>
+    <div class="fee-grid">
+      <div class="fee-card">
+        <div class="fee-label">セミナー参加費</div>
+        <div class="fee-amount">2,000<span class="fee-unit">円</span></div>
+        <div class="fee-note">第1部のみ参加可</div>
+      </div>
+      <div class="fee-card featured">
+        <div class="fee-label">懇親会費</div>
+        <div class="fee-amount">5,500<span class="fee-unit">円</span></div>
+        <div class="fee-note">講師も参加！</div>
+      </div>
+    </div>
+    <div class="fee-info">
+      ・対象：税理士・司法書士・行政書士・弁護士など、相続不動産実務家の士業<br>
+      ・セミナーのみ、または両方へのご参加どちらも歓迎です<br>
+      ・懇親会では講師を交えた少人数での交流が可能です
+    </div>
+  </div>
+
+  <!-- VENUE -->
+  <div class="section">
+    <div class="section-label">開催場所</div>
+    <h2 class="section-title">アクセス</h2>
+    <div class="venue-card">
+      <div class="venue-header">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+        会員制 貸会議室 八重洲倶楽部
+      </div>
+      <div class="venue-body">
+        <div class="venue-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          <div>
+            <div class="venue-row-label">住所</div>
+            <div class="venue-row-text">〒104-0028 東京都中央区八重洲2丁目1番<br>八重洲地下街 地下2階</div>
+          </div>
+        </div>
+        <div class="venue-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+          <div>
+            <div class="venue-row-label">アクセス</div>
+            <div class="access-pills">
+              <span class="access-pill">JR東京駅 直結</span>
+              <span class="access-pill">八重洲地下街 B2F</span>
+            </div>
+          </div>
+        </div>
+        <div class="venue-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
+          <div>
+            <div class="venue-row-label">日時</div>
+            <div class="venue-row-text">2026年8月5日（水）18:00〜19:30<br>※懇親会は19:30〜別途開催</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORGANIZERS -->
+  <div class="section">
+    <div class="section-label">運営</div>
+    <h2 class="section-title">主催者のご紹介</h2>
+    <div class="org-grid">
+      <div class="org-card">
+        <div class="org-badge">主催</div>
+        <div class="org-name">合同会社TSC</div>
+        <div class="org-person">代表社員　鍋島 重茂</div>
+      </div>
+      <div class="org-card">
+        <div class="org-badge">共催</div>
+        <div class="org-name">ななくり行政書士事務所</div>
+        <div class="org-person">行政書士　山本 百合香</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER CTA -->
+  <div class="footer-cta">
+    <div class="footer-cta-title">参加申し込みはお早めに</div>
+    <div class="footer-cta-sub">
+      定員20名・先着順。締切は7月22日（水）です。<br>
+      懇親会での講師との交流もぜひご活用ください。
+    </div>
+    <a href="https://x.gd/H1Dvw" class="cta-btn-lg" target="_blank" rel="noopener">
+      今すぐ申し込む
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+    </a>
+    <div class="footer-note">お問い合わせは主催者（合同会社TSC）までお気軽にどうぞ</div>
+  </div>
+
+</div>
+</body>
+</html>
