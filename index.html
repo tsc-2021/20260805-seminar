@@ -7,24 +7,63 @@
   <meta name="description" content="税理士・司法書士・行政書士・弁護士など、相続不動産実務家の士業向け講演。2026年8月5日（水）リスペース東京日本橋にて開催。定員30名・先着順。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Noto Sans JP', sans-serif;
       background: #F5F7FA;
       color: #1A1A1A;
       -webkit-font-smoothing: antialiased;
     }
-
     .lp {
       max-width: 720px;
       margin: 0 auto;
       background: #fff;
       box-shadow: 0 0 40px rgba(0,0,0,0.08);
+    }
+
+    /* ── 士縁会 TOP HEADER ── */
+    .shien-header {
+      background: #fff;
+      border-bottom: 1px solid #E8E2D9;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .shien-header-line {
+      flex: 1;
+      height: 1px;
+      background: #C8BBA8;
+    }
+    .shien-header-center {
+      text-align: center;
+      padding: 0 28px;
+    }
+    .shien-header-ruby {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      color: #9A8E7E;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .shien-header-name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: #2C2416;
+      letter-spacing: 0.32em;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .shien-header-tagline {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: #B5A994;
     }
 
     /* ── HERO ── */
@@ -356,6 +395,57 @@
     }
 
     /* ── ORGANIZERS ── */
+    .shien-section-block {
+      border: 1px solid #D8D0C4;
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      background: #FDFBF8;
+      position: relative;
+    }
+    /* 四隅の小さな飾り */
+    .shien-section-block::before,
+    .shien-section-block::after {
+      content: '―';
+      position: absolute;
+      top: 14px;
+      font-size: 11px;
+      color: #C8BBA8;
+      letter-spacing: -2px;
+    }
+    .shien-section-block::before { left: 18px; }
+    .shien-section-block::after  { right: 18px; }
+    .shien-section-ruby {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: #9A8E7E;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .shien-section-name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 34px;
+      font-weight: 600;
+      color: #2C2416;
+      letter-spacing: 0.35em;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .shien-section-hr {
+      width: 40px;
+      height: 1px;
+      background: #C8BBA8;
+      margin: 0 auto 10px;
+    }
+    .shien-section-desc {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 11px;
+      color: #B5A994;
+      letter-spacing: 0.15em;
+    }
+
     .org-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .org-card {
       border: 1px solid #E2E8F0;
@@ -414,6 +504,8 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 560px) {
+      .shien-header { padding: 16px 24px; }
+      .shien-header-name { font-size: 22px; }
       .hero { padding: 40px 24px 36px; }
       .hero-title { font-size: 22px; }
       .section { padding: 36px 24px; }
@@ -424,11 +516,24 @@
       .speaker-card { flex-direction: column; }
       .footer-cta { padding: 40px 24px; }
       .hero-meta { flex-direction: column; }
+      .shien-section-name { font-size: 28px; }
+      .shien-section-block { padding: 24px 20px; }
     }
   </style>
 </head>
 <body>
 <div class="lp">
+
+  <!-- 士縁会 TOP HEADER -->
+  <div class="shien-header">
+    <div class="shien-header-line"></div>
+    <div class="shien-header-center">
+      <span class="shien-header-ruby">士業専門家向け　月次セミナーシリーズ</span>
+      <span class="shien-header-name">士　縁　会</span>
+      <span class="shien-header-tagline">士業の縁が、実務を深める</span>
+    </div>
+    <div class="shien-header-line"></div>
+  </div>
 
   <!-- HERO -->
   <div class="hero">
@@ -631,6 +736,12 @@
   <div class="section">
     <div class="section-label">運営</div>
     <h2 class="section-title">主催者のご紹介</h2>
+    <div class="shien-section-block">
+      <span class="shien-section-ruby">士業専門家向け　月次セミナーシリーズ</span>
+      <span class="shien-section-name">士　縁　会</span>
+      <div class="shien-section-hr"></div>
+      <span class="shien-section-desc">士業の縁が、実務を深める</span>
+    </div>
     <div class="org-grid">
       <div class="org-card">
         <div class="org-badge">主催</div>
